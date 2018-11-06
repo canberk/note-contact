@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NoteContact</string>
+    <string name="note_header_text">Not Başlığı:</string>
+    <string name="note_content_text">Not İçeriği:</string>
+    <string name="button_delete_text">Sil</string>
+    <string name="button_edit_text">Düzenle</string>
+    <string name="button_add_notes_text">+     NOT EKLE</string>
+    <string name="button_add_text">Ekle</string>
+    <string name="edited_text"> düzenlendi.</string>
+    <string name="added_text"> eklendi.</string>
+    <string name="deleted_text"> silindi.</string>
+    <string name="nothing_changed">Hiçbir şey değiştirilmedi.</string>
+    <string name="reading_contact">Rehber okunuyor</string>
+    <string name="search_hint">Ara...</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="are_you_sure">Emin misiniz?</string>
+    <string name="are_you_sure_delete">Silmek istediğinize emin misiniz?</string>
+    <string name="update_completed">Güncelleme tamamlandı.</string>
+</resources>

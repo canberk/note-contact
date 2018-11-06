@@ -1,0 +1,20 @@
+<resources tools:ignore="ExtraTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">NoteContact</string>
+    <string name="note_header_text">Note Title:</string>
+    <string name="note_content_text">Note Content:</string>
+    <string name="button_delete_text">Delete</string>
+    <string name="button_edit_text">Edit</string>
+    <string name="button_add_notes_text">+     ADD NOTE</string>
+    <string name="button_add_text">Add</string>
+    <string name="edited_text"> edited.</string>
+    <string name="added_text"> added.</string>
+    <string name="deleted_text"> deleted.</string>
+    <string name="nothing_changed">Nothing changed.</string>
+    <string name="reading_contact">Reading contacts</string>
+    <string name="search_hint">Search...</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete it?</string>
+    <string name="update_completed">Update Completed</string>
+</resources>
