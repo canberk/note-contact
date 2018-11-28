@@ -47,7 +47,13 @@ public  class CustomAdapterContactList extends BaseAdapter {
 
         Contacts contacts = (Contacts) getItem(position);
         LayoutInflater layoutInflater = ((Activity) context).getLayoutInflater();
-        LinearLayout layout = (LinearLayout) layoutInflater.inflate(R.layout.contacts_custom,null);
+        LinearLayout layout = null;
+
+        if(convertView == null){
+            layout = (LinearLayout) layoutInflater.inflate(R.layout.contacts_custom,null);
+        }else {
+            layout = (LinearLayout) convertView;
+        }
 
         ImageView imageView = (ImageView) layout.findViewById(R.id.photo);
         TextView textViewName = (TextView) layout.findViewById(R.id.name);

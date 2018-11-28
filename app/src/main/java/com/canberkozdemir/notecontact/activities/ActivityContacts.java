@@ -115,12 +115,12 @@ public class ActivityContacts extends AppCompatActivity {
     }
 
     private void refreshContactOnBackground(){
-        floatingActionButton.setVisibility(View.INVISIBLE);
+        //floatingActionButton.setVisibility(View.INVISIBLE);
         new Thread(new Runnable() {
             @Override
             public void run() {
                 isUITask=false;
-                getContacts();
+               // getContacts();
             }
         }).start();
     }
@@ -221,11 +221,16 @@ public class ActivityContacts extends AppCompatActivity {
         String Phone_CONTACT_ID = ContactsContract.CommonDataKinds.Phone.CONTACT_ID;
         String NUMBER = ContactsContract.CommonDataKinds.Phone.NUMBER;
         ContentResolver contentResolver = getContentResolver();
-        cursor = contentResolver.query(CONTENT_URI, null, null, null, null);
+        cursor = contentResolver.query(CONTENT_URI, null, null, null,
+                ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " ASC");
         contact = new ArrayList<>();
 
         if (cursor.getCount() > 0) {
             counter = 0;
+
+            NoteContactDatabase noteDelete = NoteContactDatabase.getDatabase(getApplicationContext());
+            noteDelete.getContactDAO().deleteAllContacts();
+
             while (cursor.moveToNext()) {
                 if(isUITask) {
                     updateBarHandler.post(new Runnable() {
