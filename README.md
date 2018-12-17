@@ -4,7 +4,7 @@
 
 Duzce University Mobile Programming homework (bm443)
 
-Note application that will save you for forgotten birthdays, important dates, addresses and a lot of fine and forgettable information.
+Note application that will save you for forgotten birthdays, important dates, addresses and a lot of forgettable information.
 
 # Screenshots
 
